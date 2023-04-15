@@ -23,6 +23,7 @@ _**TodoItem, TodoList, App으로 컴포넌트를 분리하여 구성하였다.**
 
 **컴포넌트 분리 전 원본 코드**
 
+
 ```jsx
 import React, { useState } from "react";
 
@@ -122,8 +123,9 @@ function App() {
   );
 }
 
-export default App;```
+export default App;
 
+```
 ---
 
 ## ✍️ 업데이트 내역
