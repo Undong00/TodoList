@@ -1,17 +1,17 @@
-# 프로젝트 Description
+# 💻 프로젝트 Description
 ### 프로젝트 명 : TodoList
 > React 훅 useState와 props, jsx를 이용해서 간단히 만들어보는 TodoList입니다.
 
 ---
 
-## 배포
+## ✅ 배포
 
  https://todo-list-lovat-eight.vercel.app/
 
 ----
 
 
-## 기능 
+## 📝 기능 
 
 _**TodoItem, TodoList, App으로 컴포넌트를 분리하여 구성하였다. **_
 
@@ -23,12 +23,12 @@ _**TodoItem, TodoList, App으로 컴포넌트를 분리하여 구성하였다. *
 
 ---
 
-## 업데이트 내역
+## ✍️ 업데이트 내역
 
 ------
 
 
-## 개발 환경 및 설치 방법
+## 🔡 개발 환경 및 설치 방법
 
 
 **Mac**
