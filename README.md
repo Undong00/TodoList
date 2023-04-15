@@ -13,7 +13,7 @@
 
 ## 📝 기능 
 
-_**TodoItem, TodoList, App으로 컴포넌트를 분리하여 구성하였다. **_
+_**TodoItem, TodoList, App으로 컴포넌트를 분리하여 구성하였다.**_
 
 **`TodoItem`** 컴포넌트는 하나의 Todo 아이템을 나타내며, **`user`** props를 받아 해당 아이템을 렌더링합니다. **`onDelete`** props는 해당 아이템 삭제 함수, **`onToggle`** props는 해당 아이템 완료/취소 함수를 받아 해당 기능을 수행합니다.
 
