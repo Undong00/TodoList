@@ -1,71 +1,51 @@
-# Getting Started with Create React App
+# 프로젝트 Description
+### 프로젝트 명 : TodoList
+> React 훅 useState와 props, jsx를 이용해서 간단히 만들어보는 TodoList입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 배포
 
-In the project directory, you can run:
+ https://todo-list-lovat-eight.vercel.app/
 
-### `yarn start`
+----
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 기능 
 
-### `yarn test`
+_**TodoItem, TodoList, App으로 컴포넌트를 분리하여 구성하였다. **_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**`TodoItem`** 컴포넌트는 하나의 Todo 아이템을 나타내며, **`user`** props를 받아 해당 아이템을 렌더링합니다. **`onDelete`** props는 해당 아이템 삭제 함수, **`onToggle`** props는 해당 아이템 완료/취소 함수를 받아 해당 기능을 수행합니다.
 
-### `yarn build`
+**`TodoList`** 컴포넌트는 **`title`**, **`users`**, **`onDelete`**, **`onToggle`**, **`isDone`** props를 받아 Todo 리스트를 렌더링합니다. **`users`** 배열에서 **`isDone`** 값에 따라 필터링하여 해당 리스트를 렌더링합니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**`App`** 컴포넌트는 전체 Todo 리스트 앱을 나타냅니다. **`users`** state는 Todo 아이템들을 저장하는 배열이며, **`title`**, **`body`** state는 새로운 Todo 아이템 추가 시 입력받은 제목과 내용을 저장합니다. **`addbtn`**, **`deletebtn`**, **`toggleDone`**, **`cancelDone`** 함수는 각각 Todo 아이템을 추가, 삭제, 완료/취소하는 기능을 수행합니다. 또한, **`TodoList`** 컴포넌트를 두 개 렌더링하여 **`isDone`** 값에 따라 완료/미완료 리스트를 구분합니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 업데이트 내역
 
-### `yarn eject`
+------
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 개발 환경 및 설치 방법
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Mac**
 
-## Learn More
+```sh
+$ npm install -g yarn
+yarn create-react-app my-app
+cd my-app
+yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Window**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# TodoList
+```sh
+$ npm install -g yarn
+yarn create-react-app my-app
+cd my-app
+yarn start
+```
+----
