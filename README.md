@@ -64,7 +64,7 @@ function App() {
   const completebtn = (id) => {
     // 완료 버튼 id를 받아서 해당 id의 user의 isDone을 true로 변경
     const updatedUsers = users.map((user) =>
-      user.id === id ? { ...user, isDone: !user.isDone } : user
+      user.id === id ? { ...user, isDone: true} : user
     );
     setUser(updatedUsers);
   };
